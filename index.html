@@ -1,126 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- FONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link />
-    
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <!-- CSS BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-     <!-- STYLE CSS -->
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- STYLE CSS -->
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-<main>
-  <div class="container">
-    <div class="navigation">
-      <div class="d-flex navigation__list">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button class="nav-link active" id="v-pills-number1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number1" type="button" role="tab" aria-controls="v-pills-number1" aria-selected="true">Bài 1</button>
-          <button class="nav-link" id="v-pills-number2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number2" type="button" role="tab" aria-controls="v-pills-number2" aria-selected="false">Bài 2</button>
-          <button class="nav-link" id="v-pills-number3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number3" type="button" role="tab" aria-controls="v-pills-number3" aria-selected="false">Bài 3</button>
-          <button class="nav-link" id="v-pills-number4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number4" type="button" role="tab" aria-controls="v-pills-number4" aria-selected="false">Bài 4</button>
-          <button class="nav-link" id="v-pills-number5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number5" type="button" role="tab" aria-controls="v-pills-number5" aria-selected="false">Bài 5</button>
-          <button class="nav-link" id="v-pills-number6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number6" type="button" role="tab" aria-controls="v-pills-number6" aria-selected="false">Bài 6</button>
-          <button class="nav-link" id="v-pills-number7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number7" type="button" role="tab" aria-controls="v-pills-number7" aria-selected="false">Bài 7</button>
-          <button class="nav-link" id="v-pills-number8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number8" type="button" role="tab" aria-controls="v-pills-number8" aria-selected="false">Bài 8</button>
-        </div>
-        <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-number1" role="tabpanel" aria-labelledby="v-pills-number1-tab" tabindex="0">
-            <div class="tab__item">
-              <h2>Xuất 3 số theo thứ tự tăng dần</h2>
-              <div class="tab__text">
-                <ul>
-                  <li>
-                    <h4>Input:</h4>
-                    <p>Nhập vào 3 số cần sắp xếp</p>
-                  </li>
-                  <li>
-                    <h4>Process:</h4>
-                    <p>Dùng if else để so sánh 3 số, dùng biến tạm để lưu trữ. ép kiểu sang số thực để sắp xếp<br/>
-                    
+  <main>
+    <div class="container">
+      <div class="navigation">
+        <div class="d-flex navigation__list">
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-number1-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-number1" type="button" role="tab" aria-controls="v-pills-number1"
+              aria-selected="true">Bài 1</button>
+            <button class="nav-link" id="v-pills-number2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number2"
+              type="button" role="tab" aria-controls="v-pills-number2" aria-selected="false">Bài 2</button>
+            <button class="nav-link" id="v-pills-number3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number3"
+              type="button" role="tab" aria-controls="v-pills-number3" aria-selected="false">Bài 3</button>
+            <button class="nav-link" id="v-pills-number4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number4"
+              type="button" role="tab" aria-controls="v-pills-number4" aria-selected="false">Bài 4</button>
+            <button class="nav-link" id="v-pills-number5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number5"
+              type="button" role="tab" aria-controls="v-pills-number5" aria-selected="false">Bài 5</button>
+            <button class="nav-link" id="v-pills-number6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number6"
+              type="button" role="tab" aria-controls="v-pills-number6" aria-selected="false">Bài 6</button>
+            <button class="nav-link" id="v-pills-number7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number7"
+              type="button" role="tab" aria-controls="v-pills-number7" aria-selected="false">Bài 7</button>
+            <button class="nav-link" id="v-pills-number8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-number8"
+              type="button" role="tab" aria-controls="v-pills-number8" aria-selected="false">Bài 8</button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-number1" role="tabpanel"
+              aria-labelledby="v-pills-number1-tab" tabindex="0">
+              <div class="tab__item">
+                <h2>Xuất 3 số theo thứ tự tăng dần</h2>
+                <div class="tab__text">
+                  <ul>
+                    <li>
+                      <h4>Input:</h4>
+                      <p>Nhập vào 3 số cần sắp xếp</p>
+                    </li>
+                    <li>
+                      <h4>Process:</h4>
+                      <p>Dùng if else để so sánh 3 số, dùng biến tạm để lưu trữ. ép kiểu sang số thực để sắp xếp<br />
+
                       <ul>
-                        <li>Nếu B bé hơn A<br/>
-                           => tạm bằng B<br/>
-                              B = A <br/>
-                              A = tạm <br/>
-                              => như vậy là có thể đổi chỗ B cho A
-                            Ví dụ: 6 5 => 5 6
-                          </li>
-                        <li>Nếu C bé hơn A<br/>
-                           => tạm bằng C<br/>
-                              C = A <br/>
-                              A = tạm <br/>
-                              => như vậy là có thể đổi chỗ C cho A
-                            Ví dụ: 5 2 => 2 5
-                          </li>
+                        <li>Nếu B bé hơn A<br />
+                          => tạm bằng B<br />
+                          B = A <br />
+                          A = tạm <br />
+                          => như vậy là có thể đổi chỗ B cho A
+                          Ví dụ: 6 5 => 5 6
+                        </li>
+                        <li>Nếu C bé hơn A<br />
+                          => tạm bằng C<br />
+                          C = A <br />
+                          A = tạm <br />
+                          => như vậy là có thể đổi chỗ C cho A
+                          Ví dụ: 5 2 => 2 5
+                        </li>
                       </ul>
 
-                    </p>
-                  </li>
-                  <li>
-                    <h4>Output:</h4>
-                    <p>Kết quả của sắp xếp</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab__input ">
-                <div class="row input__group ">
-                  <input class="col m-2 input number" type="number" placeholder="Số thứ 1"  min="1">
-                  <input class="col m-2 input number" type="number" placeholder="Số thứ 2" min="1">
-                  <input class="col m-2 input number" type="number" placeholder="Số thứ 3" min="1">
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Output:</h4>
+                      <p>Kết quả của sắp xếp</p>
+                    </li>
+                  </ul>
                 </div>
-                <div class="result">
-                  <button class="result__button"  onclick="resultSort()">Sắp xếp</button>
+                <div class="tab__input ">
+                  <div class="row input__group ">
+                    <input class="col m-2 input number" type="number" placeholder="Số thứ 1" min="1">
+                    <input class="col m-2 input number" type="number" placeholder="Số thứ 2" min="1">
+                    <input class="col m-2 input number" type="number" placeholder="Số thứ 3" min="1">
+                  </div>
+                  <div class="result">
+                    <button class="result__button" onclick="resultSort()">Sắp xếp</button>
+                  </div>
                 </div>
-              </div>
-              <div class="tab__result">
-                <label>Kết quả là:</label>
-                <input type="text" disabled id="resultSort">
+                <div class="tab__result">
+                  <label>Kết quả là:</label>
+                  <input type="text" disabled id="resultSort">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-number2" role="tabpanel" aria-labelledby="v-pills-number2-tab" tabindex="0">
-             <div class="tab__item">
-              <h2>Chương trình chào hỏi</h2>
-              <div class="tab__text">
-                <ul>
-                  <li>
-                    <h4>Input:</h4>
-                    <p>Người dùng chọn thành viên cần chào gồm: Ba, mẹ, ông, bà, anh, chị</p>
-                  </li>
-                  <li>
-                    <h4>Process:</h4>
-                    <p>
-                      Dùng dropdown để người dùng chọn<br/>
-                      Dùng === để so sánh chính xác có cùng kiểu dữ liệu hay không, thay vì == sẽ dễ phát sinh lỗi do JS không phân biệt kiểu dữ liệu khi so sánh.<br/>
-                      Nếu người dùng chọn Ba sẽ so sánh với từ Ba ở trong dữ liệu và xuất ra câu chào hỏi.
-                    </p>
-                  </li>
-                  <li>
-                    <h4>Output:</h4>
-                    <p>Kết quả tương ứng</p>
-                  </li>
-                </ul>
-              </div>
-              <div class=" tab__input ">
-                <div class="row input__group ">
-                   <select id="selectFamily">
+            <div class="tab-pane fade" id="v-pills-number2" role="tabpanel" aria-labelledby="v-pills-number2-tab"
+              tabindex="0">
+              <div class="tab__item">
+                <h2>Chương trình chào hỏi</h2>
+                <div class="tab__text">
+                  <ul>
+                    <li>
+                      <h4>Input:</h4>
+                      <p>Người dùng chọn thành viên cần chào gồm: Ba, mẹ, ông, bà, anh, chị</p>
+                    </li>
+                    <li>
+                      <h4>Process:</h4>
+                      <p>
+                        Dùng dropdown để người dùng chọn<br />
+                        Dùng === để so sánh chính xác có cùng kiểu dữ liệu hay không, thay vì == sẽ dễ phát sinh lỗi do
+                        JS không phân biệt kiểu dữ liệu khi so sánh.<br />
+                        Nếu người dùng chọn Ba sẽ so sánh với từ Ba ở trong dữ liệu và xuất ra câu chào hỏi.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Output:</h4>
+                      <p>Kết quả tương ứng</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class=" tab__input ">
+                  <div class="row input__group ">
+                    <select class="input" id="selectFamily">
                       <option value="">Chọn thành viên</option>
                       <optgroup label="Ông/Bà">
                         <option value="Ông Ngoại">Ông Ngoại</option>
@@ -142,289 +155,344 @@
                         <option value="Em gái">Em gái</option>
                         <option value="Em trai">Em trai</option>
                       </optgroup>
-                   </select>
+                    </select>
+                  </div>
+                  <div class="result">
+                    <button class="result__button" onclick="selectedHello()">Gửi lời chào</button>
+                  </div>
                 </div>
-                <div class="result">
-                  <button class="result__button" onclick="selectedHello()">Gửi lời chào</button>
+                <div class="tab__result">
+                  <label>Gửi lời chào:</label>
+                  <input type="text" disabled id="selectedHello">
                 </div>
-              </div>
-              <div class="tab__result">
-                <label>Gửi lời chào:</label>
-                <input type="text" disabled id="selectedHello">
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-number3" role="tabpanel" aria-labelledby="v-pills-number3-tab" tabindex="0">
-             <div class="tab__item">
-              <h2>Đếm số chẵn lẻ</h2>
-              <div class="tab__text">
-                <ul>
-                  <li>
-                    <h4>Input:</h4>
-                    <p>Nhập vào 3 số nguyên bất kì</p>
-                  </li>
-                  <li>
-                    <h4>Process:</h4>
-                    <p>Công thức: 
+            <div class="tab-pane fade" id="v-pills-number3" role="tabpanel" aria-labelledby="v-pills-number3-tab"
+              tabindex="0">
+              <div class="tab__item">
+                <h2>Đếm số chẵn lẻ</h2>
+                <div class="tab__text">
+                  <ul>
+                    <li>
+                      <h4>Input:</h4>
+                      <p>Nhập vào 3 số nguyên bất kì</p>
+                    </li>
+                    <li>
+                      <h4>Process:</h4>
+                      <p>Công thức:
                       <ul>
                         <li>Số chẵn là số chia hết cho 2 và không dư (n%2===0)</li>
                         <li>Số lẻ là số chia hết cho 2 và dư 1 hoặc số không chia hết cho 2 (n%2===1 hoặc n%2!==0)</li>
                         <li>Dùng biến count đếm</li>
 
                       </ul>
-                    </p>
-                  </li>
-                  <li>
-                    <h4>Output:</h4>
-                    <p>Kết quả của phép đếm</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab__input ">
-                <div class="row input__group ">
-                  <input class="col m-2 input number1" type="number" placeholder="Số nguyên thứ 1" min="1">
-                  <input class="col m-2 input number1"  type="number" placeholder="Số nguyên thứ 2" min="1">
-                  <input class="col m-2 input number1"  type="number" placeholder="Số nguyên thứ 3" min="1">
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Output:</h4>
+                      <p>Kết quả của phép đếm</p>
+                    </li>
+                  </ul>
                 </div>
-                <div class="result">
-                  <button class="result__button" onclick="resultCount()">Đếm</button>
+                <div class="tab__input ">
+                  <div class="row input__group ">
+                    <input class="col m-2 input number1" type="number" placeholder="Số nguyên thứ 1" min="1">
+                    <input class="col m-2 input number1" type="number" placeholder="Số nguyên thứ 2" min="1">
+                    <input class="col m-2 input number1" type="number" placeholder="Số nguyên thứ 3" min="1">
+                  </div>
+                  <div class="result">
+                    <button class="result__button" onclick="resultCount()">Đếm</button>
+                  </div>
                 </div>
-              </div>
-              <div class="tab__result">
-                <label>Kết quả là:</label>
-                <input type="text" disabled id="resultCount">
+                <div class="tab__result">
+                  <label>Kết quả là:</label>
+                  <input type="text" disabled id="resultCount">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-number4" role="tabpanel" aria-labelledby="v-pills-number4-tab" tabindex="0">
-             <div class="tab__item">
-              <h2>Tính Chu Vi và Diện Tích hình chữ nhật</h2>
-              <div class="tab__text">
-                <ul>
-                  <li>
-                    <h4>Input:</h4>
-                    <p>Nhập vào chiều dài và chiều rộng</p>
-                  </li>
-                  <li>
-                    <h4>Process:</h4>
-                    <p>Công thức: <br/>
-                      Diện tích: dài x rộng<br/>
-                      Chu vi: (dài + rộng) x 2<br/>
-                    </p>
-                  </li>
-                  <li>
-                    <h4>Output:</h4>
-                    <p>Kết quả chu vi và diện tích</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab__input ">
-                <div class="row input__group ">
-                  <input class="col m-2 input " type="number" placeholder="Nhập chiều dài" min="1">
-                  <input class="col m-2 input" type="number" placeholder="Số chiều rộng" min="1">
+            <div class="tab-pane fade" id="v-pills-number4" role="tabpanel" aria-labelledby="v-pills-number4-tab"
+              tabindex="0">
+              <div class="tab__item">
+                <h2>Đoán hình tam giác</h2>
+                <div class="tab__text">
+                  <ul>
+                    <li>
+                      <h4>Input:</h4>
+                      <p>Nhập vào 3 cạnh của một tam giác</p>
+                    </li>
+                    <li>
+                      <h4>Process:</h4>
+                      <p>Công thức: 
+                        <ul>
+                          <li><span class="fs-4">Tam giác luôn có 2 cạnh cộng lại phải lớn hơn cạnh thứ 3:</span></li>
+                          <ul>
+                            <li>a+b>c</li>
+                            <li>a+c>b</li>
+                            <li>b+c>a</li>
+                          </ul>
+                          <li>
+                            <span class="fs-4">Tam giác đều là có ba cạnh bằng nhau:</span>
+                            <ul>
+                              <li>a = b = c = 3cm</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <span class="fs-4">Tam giác cân là tam giác có 2 cạnh bằng nhau:</span>
+                            <ul>
+                              <li>a = b = 3cm, c=4cm</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <span class="fs-4">Tam giác vuông là tam giác có bình phương 1 cạnh bằng tổng bình phương 2 cạnh còn lại:</span>
+                            <ul>
+                              <li>a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup>  vd: a = 3,b = 4,c = 5</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <span class="fs-4">Tam giác còn lại là tam giác không thuộc 3 tam giác trên</span>
+                          </li>
+                        </ul>
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Output:</h4>
+                      <p>Kết quả của loại tam giác đó</p>
+                    </li>
+                  </ul>
                 </div>
-                <div class="result">
-                  <button class="result__button">Tính</button>
+                <div class="tab__input ">
+                  <div class="row input__group ">
+                    <input class="col m-2 circle input" type="number" placeholder="Cạnh a" min="1">
+                    <input class="col m-2 circle input" type="number" placeholder="Cạnh b" min="1">
+                    <input class="col m-2 circle input" type="number" placeholder="Cạnh c" min="1">
+                  </div>
+                  <div class="result">
+                    <button class="result__button" onclick="resultCircle()">Đoán Tam giác</button>
+                  </div>
                 </div>
-              </div>
-              <div class="tab__result">
-                <label>Kết quả là:</label>
-                <input type="text">
+                <div class="tab__result">
+                  <label>Kết quả là:</label>
+                  <input type="text" id="resultCircle">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-number5" role="tabpanel" aria-labelledby="v-pills-number5-tab" tabindex="0">
-             <div class="tab__item">
-              <h2>Xác định ngày hôm qua hoặc ngày mai</h2>
-              <div class="tab__text">
-                <ul style="list-style-type: none;">
-                  <li>
-                    <h4>Input:</h4>
-                    <p>Nhập ngày tháng năm cần xem ngày hôm trước và hôm sau</p>
-                  </li>
-                  <li>
-                    <h4>Process:</h4>
-                    <p>Công thức:
+            <div class="tab-pane fade" id="v-pills-number5" role="tabpanel" aria-labelledby="v-pills-number5-tab"
+              tabindex="0">
+              <div class="tab__item">
+                <h2>Xác định ngày hôm qua hoặc ngày mai</h2>
+                <div class="tab__text">
+                  <ul style="list-style-type: none;">
+                    <li>
+                      <h4>Input:</h4>
+                      <p>Nhập ngày tháng năm cần xem ngày hôm trước và hôm sau</p>
+                    </li>
+                    <li>
+                      <h4>Process:</h4>
+                      <p>Công thức:
                       <ul style="list-style-type: none">
-                        <li> 
+                        <li>
                           <span class="fs-4">B1: Dữ liệu phải nằm trong vùng sau đây:</span>
-                          <ul class="mx-4"  style="list-style-type: disc;">
-                              <li>Cho D = day, M = month, Y = year</li>
-                              <li>Năm phải lớn hơn hoặc bằng năm 1920</li>
-                              <li>Tháng lớn hơn 0 và bé hơn 13</li>
-                              <li>Ngày phải lớn hơn 0 và bé hơn 32</li>
-                              <li>Nếu năm nhuận thì tháng 2 có 29 ngày ngược lại là 28 ngày</li>
+                          <ul class="mx-4" style="list-style-type: disc;">
+                            <li>Cho D = day, M = month, Y = year</li>
+                            <li>Năm phải lớn hơn hoặc bằng năm 1920</li>
+                            <li>Tháng lớn hơn 0 và bé hơn 13</li>
+                            <li>Ngày phải lớn hơn 0 và bé hơn 32</li>
+                            <li>Nếu năm nhuận thì tháng 2 có 29 ngày ngược lại là 28 ngày</li>
                           </ul>
                         </li>
-                        <li> 
+                        <li>
                           <span class="fs-4">B2: Đối với ngày hôm trước: </span>
-                           <ul class="mx-4"  style="list-style-type: disc;">
-                              <li>Ngày hiện tại trừ đi 1, nếu ngày bằng 0 thì giảm tháng đi 1</li>
-                              <li>Nếu tra tháng đó nếu là tháng 1-3-5-7-8-10-12 thì tháng đó là tháng 31 ngày nên D = 31</li>
-                              <li>Nếu tháng đó là tháng 4-6-9-11 là tháng có 30 ngày nên D = 30</li>
-                              <li>Nếu tháng đó là tháng 2 thì tiếp tục kiểm tra xem năm người dùng nhập là năm nhuận hay năm không nhuận</li>
-                              <li>Nếu là năm nhuận thì D = 29 còn ngược lại là D = 28</li>
-                              <li>Nếu giảm tháng mà bằng 0 thì giảm năm đi 1 và M = 12 và D = 31</li>
+                          <ul class="mx-4" style="list-style-type: disc;">
+                            <li>Ngày hiện tại trừ đi 1, nếu ngày bằng 0 thì giảm tháng đi 1</li>
+                            <li>Nếu tra tháng đó nếu là tháng 1-3-5-7-8-10-12 thì tháng đó là tháng 31 ngày nên D = 31
+                            </li>
+                            <li>Nếu tháng đó là tháng 4-6-9-11 là tháng có 30 ngày nên D = 30</li>
+                            <li>Nếu tháng đó là tháng 2 thì tiếp tục kiểm tra xem năm người dùng nhập là năm nhuận hay
+                              năm không nhuận</li>
+                            <li>Nếu là năm nhuận thì D = 29 còn ngược lại là D = 28</li>
+                            <li>Nếu giảm tháng mà bằng 0 thì giảm năm đi 1 và M = 12 và D = 31</li>
                           </ul>
                         </li>
-                        <li>  <span class="fs-4">B3: Đối với ngày hôm sau: (tương tự, thay vì giảm  1 thì tăng 1) </span></li>
-                      </ul> 
-                       </p>
-                  </li>
-                  <li>
-                    <h4>Output:</h4>
-                    <p>Kết quả ngày hôm trước hoặc ngày hôm sau tương ứng</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab__input ">
-                <div class="row input__group ">
-                  <input class="col m-2 input date" type="number" placeholder="Nhập ngày" min="1">
-                  <input class="col m-2 input date" type="number" placeholder="Nhập tháng" min="1">
-                  <input class="col m-2 input date" type="number" placeholder="Nhập năm" min="1920">
+                        <li> <span class="fs-4">B3: Đối với ngày hôm sau: (tương tự, thay vì giảm 1 thì tăng 1) </span>
+                        </li>
+                      </ul>
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Output:</h4>
+                      <p>Kết quả ngày hôm trước hoặc ngày hôm sau tương ứng</p>
+                    </li>
+                  </ul>
                 </div>
-                <div class="result">
-                  <button class="result__button" onclick="resultDateBefore()">Ngày hôm trước</button>
-                  <button class="result__button" onclick="resultDateAfter()">Ngày hôm sau</button>
+                <div class="tab__input ">
+                  <div class="row input__group ">
+                    <input class="col m-2 input date" type="number" placeholder="Nhập ngày" min="1">
+                    <input class="col m-2 input date" type="number" placeholder="Nhập tháng" min="1">
+                    <input class="col m-2 input date" type="number" placeholder="Nhập năm" min="1920">
+                  </div>
+                  <div class="result">
+                    <button class="result__button" onclick="resultDateBefore()">Ngày hôm trước</button>
+                    <button class="result__button" onclick="resultDateAfter()">Ngày hôm sau</button>
+                  </div>
                 </div>
-              </div>
-              <div class="tab__result">
-                <label>Kết quả là:</label>
-                <input type="text" id="resultDate" disabled>
+                <div class="tab__result">
+                  <label>Kết quả là:</label>
+                  <input type="text" id="resultDate" disabled>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-number6" role="tabpanel" aria-labelledby="v-pills-number5-tab" tabindex="0">
-             <div class="tab__item">
-              <h2>Tính tổng  ký số trong 1 số</h2>
-              <div class="tab__text">
-                <ul>
-                  <li>
-                    <h4>Input:</h4>
-                    <p>Nhập vào n là số cần tính tổng ký số</p>
-                  </li>
-                  <li>
-                    <h4>Process:</h4>
-                    <p>Công thức:
+            <div class="tab-pane fade" id="v-pills-number6" role="tabpanel" aria-labelledby="v-pills-number5-tab"
+              tabindex="0">
+              <div class="tab__item">
+                <h2>Tính ngày</h2>
+                <div class="tab__text">
+                  <ul>
+                    <li>
+                      <h4>Input:</h4>
+                      <p>Nhập vào tháng và năm cần tính</p>
+                    </li>
+                    <li>
+                      <h4>Process:</h4>
+                      <p>Công thức:
                       <ul>
-                        <li> B1: tách lấy số cuối và gán vào biến x:  x = n%10</li>
-                        <li> B2: Mỗi lần tách xong sẽ giảm đi 10: n= n/10 </li>
-                        <li>  B3: biến sum (biến tính tổng) sẽ cộng dồn biến x: sum = sum + x</li>
-                        <li>  B4: lập lại bước 1 cho tới khi n=0 hoặc n<0 </li>
-                      </ul> 
-                       </p>
-                  </li>
-                  <li>
-                    <h4>Output:</h4>
-                    <p>Kết quả của lương tương ứng</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab__input ">
-                <div class="row input__group ">
-                  <input class="col input " type="number" placeholder="Nhập số cần tính tổng" min="10">
+                        <li>
+                          <span class="fs-4">Dữ liệu phải nằm trong vùng sau đây:</span>
+                          <ul class="mx-4" style="list-style-type: disc;">
+                            <li>Năm phải lớn hơn hoặc bằng năm 1920</li>
+                            <li>Tháng lớn hơn 0 và bé hơn 13</li>
+                            <li>Ngày phải lớn hơn 0 và bé hơn 32</li>
+                          </ul>
+                        </li>
+                        <li><span class="fs-4">Nếu tra tháng đó nếu là tháng 1-3-5-7-8-10-12 thì tháng đó là tháng 31
+                            ngày</span> </li>
+                        <li><span class="fs-4">Nếu tháng đó là tháng 4-6-9-11 là tháng có 30 ngày</span></li>
+                        <li><span class="fs-4">Nếu năm nhuận thì tháng 2 có 29 ngày ngược lại là 28 ngày</span></li>
+
+                      </ul>
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Output:</h4>
+                      <p>Kết quả ngày theo tháng</p>
+                    </li>
+                  </ul>
                 </div>
-                <div class="result">
-                  <button class="result__button">Tính tổng</button>
+                <div class="tab__input ">
+                  <div class="row input__group ">
+                    <input class="col mx-2 dateCount input " type="number" placeholder="Nhập tháng" min="1">
+                    <input class="col mx-2 dateCount input " type="number" placeholder="Nhập năm" min="1920">
+                  </div>
+                  <div class="result">
+                    <button class="result__button" onclick="dateCountResult()">Tính ngày</button>
+                  </div>
                 </div>
-              </div>
-              <div class="tab__result">
-                <label>Kết quả là:</label>
-                <input type="text">
+                <div class="tab__result">
+                  <label>Kết quả là:</label>
+                  <input type="text" id="dateCountResult" disabled>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-number7" role="tabpanel" aria-labelledby="v-pills-number5-tab" tabindex="0">
-             <div class="tab__item">
-              <h2>Tính tổng  ký số trong 1 số</h2>
-              <div class="tab__text">
-                <ul>
-                  <li>
-                    <h4>Input:</h4>
-                    <p>Nhập vào n là số cần tính tổng ký số</p>
-                  </li>
-                  <li>
-                    <h4>Process:</h4>
-                    <p>Công thức:
+            <div class="tab-pane fade" id="v-pills-number7" role="tabpanel" aria-labelledby="v-pills-number5-tab"
+              tabindex="0">
+              <div class="tab__item">
+                <h2>Đọc số có 3 chữ số</h2>
+                <div class="tab__text">
+                  <ul>
+                    <li>
+                      <h4>Input:</h4>
+                      <p>Nhập vào n là số có 3 chữ số</p>
+                    </li>
+                    <li>
+                      <h4>Process:</h4>
+                      <p>Công thức:
                       <ul>
-                        <li> B1: tách lấy số cuối và gán vào biến x:  x = n%10</li>
-                        <li> B2: Mỗi lần tách xong sẽ giảm đi 10: n= n/10 </li>
-                        <li>  B3: biến sum (biến tính tổng) sẽ cộng dồn biến x: sum = sum + x</li>
-                        <li>  B4: lập lại bước 1 cho tới khi n=0 hoặc n<0 </li>
-                      </ul> 
-                       </p>
-                  </li>
-                  <li>
-                    <h4>Output:</h4>
-                    <p>Kết quả của lương tương ứng</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab__input ">
-                <div class="row input__group ">
-                  <input class="col input " type="number" placeholder="Nhập số cần tính tổng" min="10">
+                        <li> B1: Lấy hàng đơn vị: n chia dư 10</li>
+                        <li> B2: Lấy hàng chục: n chia dư cho 100 chia hết cho 10 </li>
+                        <li> B3: Lấy hàng trăm: n chia hết cho 100</li>
+                        <li> B4: Mỗi lần lấy như vậy ép kiểu sang số nguyên </li>
+                      </ul>
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Output:</h4>
+                      <p>Kết quả phép đếm tương ứng</p>
+                    </li>
+                  </ul>
                 </div>
-                <div class="result">
-                  <button class="result__button">Tính tổng</button>
+                <div class="tab__input ">
+                   <div class="row input__group ">
+                    <input class="col mx-2 speakNumber input " type="number" placeholder="Nhập số có 3 chữ số" min="1">
+                  </div>
+                  <div class="result">
+                    <button class="result__button" onclick="SpeakNumber()">Đọc</button>
+                  </div>
                 </div>
-              </div>
-              <div class="tab__result">
-                <label>Kết quả là:</label>
-                <input type="text">
+                <div class="tab__result">
+                  <label>Kết quả là:</label>
+                  <input type="text" id="SpeakNumber" disabled>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="v-pills-number8" role="tabpanel" aria-labelledby="v-pills-number5-tab" tabindex="0">
-             <div class="tab__item">
-              <h2>Tính tổng  ký số trong 1 số</h2>
-              <div class="tab__text">
-                <ul>
-                  <li>
-                    <h4>Input:</h4>
-                    <p>Nhập vào n là số cần tính tổng ký số</p>
-                  </li>
-                  <li>
-                    <h4>Process:</h4>
-                    <p>Công thức:
+            <div class="tab-pane fade" id="v-pills-number8" role="tabpanel" aria-labelledby="v-pills-number5-tab"
+              tabindex="0">
+              <div class="tab__item">
+                <h2>Tính tổng ký số trong 1 số</h2>
+                <div class="tab__text">
+                  <ul>
+                    <li>
+                      <h4>Input:</h4>
+                      <p>Nhập vào n là số cần tính tổng ký số</p>
+                    </li>
+                    <li>
+                      <h4>Process:</h4>
+                      <p>Công thức:
                       <ul>
-                        <li> B1: tách lấy số cuối và gán vào biến x:  x = n%10</li>
+                        <li> B1: tách lấy số cuối và gán vào biến x: x = n%10</li>
                         <li> B2: Mỗi lần tách xong sẽ giảm đi 10: n= n/10 </li>
-                        <li>  B3: biến sum (biến tính tổng) sẽ cộng dồn biến x: sum = sum + x</li>
-                        <li>  B4: lập lại bước 1 cho tới khi n=0 hoặc n<0 </li>
-                      </ul> 
-                       </p>
-                  </li>
-                  <li>
-                    <h4>Output:</h4>
-                    <p>Kết quả của lương tương ứng</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab__input ">
-                <div class="row input__group ">
-                  <input class="col input " type="number" placeholder="Nhập số cần tính tổng" min="10">
+                        <li> B3: biến sum (biến tính tổng) sẽ cộng dồn biến x: sum = sum + x</li>
+                        <li> B4: lập lại bước 1 cho tới khi n=0 hoặc n<0 </li>
+                      </ul>
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Output:</h4>
+                      <p>Kết quả của lương tương ứng</p>
+                    </li>
+                  </ul>
                 </div>
-                <div class="result">
-                  <button class="result__button">Tính tổng</button>
+                <div class="tab__input ">
+                  <div class="row input__group ">
+                    <input class="col input " type="number" placeholder="Nhập số cần tính tổng" min="10">
+                  </div>
+                  <div class="result">
+                    <button class="result__button">Tính tổng</button>
+                  </div>
                 </div>
-              </div>
-              <div class="tab__result">
-                <label>Kết quả là:</label>
-                <input type="text">
+                <div class="tab__result">
+                  <label>Kết quả là:</label>
+                  <input type="text">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script  src="./bai1.js"></script>
-<script  src="./bai2.js"></script>
-<script  src="./bai3.js"></script>
-<script  src="./bai5.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./bai1.js"></script>
+  <script src="./bai2.js"></script>
+  <script src="./bai3.js"></script>
+  <script src="./bai4.js"></script>
+  <script src="./bai5.js"></script>
+  <script src="./bai6.js"></script>
+  <script src="./bai7.js"></script>
+  <script src="./bai8.js"></script>
+
 </body>
+
 </html>

@@ -29,6 +29,9 @@ function addStyle(name, string) {
 }
 // hàm kiểm tra dữ liệu nhập
 function checkDate(d, m, y) {
+  d = parseInt(d);
+  m = parseInt(m);
+  y = parseInt(y);
   if (d < 1 || d > 31 || m < 1 || m > 12 || y < 1920) {
     return false;
   } else {
@@ -47,6 +50,9 @@ function checkDate(d, m, y) {
 }
 // hàm kiểm tra ngày hôm trước
 function checkDateBefore(d,m,y){
+  d = parseInt(d);
+  m = parseInt(m);
+  y = parseInt(y);
   let string='';
   if (checkDate(d,m,y)==false) {
     return 0;
@@ -85,20 +91,33 @@ function checkDateBefore(d,m,y){
         d = 31;
       }
     }
-    if(m>9){
-      string = `${d}/${m}/${y}`;
-    }
-    else{
-      string = `${d}/0${m}/${y}`;
-      
-    }
-    // console.log(`Ngày hôm trước của 01/01/2020 là: ${d}/${m}/${y}`);
   }
+    // if (m > 9) {
+    //   if(d>10){
+    //     string = `${d}/${m}/${y}`;
+    //   }
+    //   else{
+    //     string = `0${d}/${m}/${y}`;
+
+    //   }
+    // }
+    // else {
+    //   if (d < 10) {
+    //     string = `0${d}/0${m}/${y}`;
+    //   } else {
+        
+    //   }
+    // }
+    string = `${d}/${m}/${y}`;
+  // console.log(`Ngày hôm trước của 01/01/2020 là: ${d}/${m}/${y}`);
   return string;
 
 }
 // hàm kiểm tra ngày hôm sau
 function checkDateAfter(d, m, y) {
+  d = parseInt(d);
+  m = parseInt(m);
+  y = parseInt(y);
   let string = '';
   if (checkDate(d,m,y)==false) {
     return 0;
@@ -156,7 +175,7 @@ function checkDateAfter(d, m, y) {
   // return string;
 
 }
-checkDateAfter(30,3,2020);
+// checkDateAfter(30,3,2020);
 function resultDateBefore(){
    if (!checkNull(".date")) {
      let arr = getValue(".date");
@@ -165,6 +184,20 @@ function resultDateBefore(){
      }
      else{
        addStyle("#resultDate", [`Ngày hôm trước là: ${checkDateBefore(arr[0],arr[1],arr[2])}`, "1px solid #000", "#000"]);
+     }
+   }
+   else{
+      addStyle("#resultDate", ["Làm ơn nhập đầy đủ dữ liệu!!!", "1px solid red", "red"]);
+    }
+}
+function resultDateAfter(){
+   if (!checkNull(".date")) {
+     let arr = getValue(".date");
+     if (checkDateAfter(arr[0], arr[1], arr[2]) == 0) {
+       addStyle("#resultDate", ["Dữ liệu không hợp lệ", "1px solid red", "red"]);
+     }
+     else{
+       addStyle("#resultDate", [`Ngày hôm trước là: ${checkDateAfter(arr[0],arr[1],arr[2])}`, "1px solid #000", "#000"]);
      }
    }
    else{
